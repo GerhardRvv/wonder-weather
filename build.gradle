@@ -1,12 +1,37 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+
+    ext {
+        koltin_version = '1.6.10'
+        ktlint_gradle_plugin_version = '10.2.1'
+        dagger_hilt = '2.40.1'
+        hilt_version = '1.0.0'
+        espresso_version = '3.4.0'
+        espresso_runner_version = "1.4.0"
+        androidXTestCoreVersion = '1.4.0'
+        androidXTestExtKotlinRunnerVersion = '1.1.3'
+        hamcrest_version = '1.3'
+        junit_version = '4.13.2'
+        coroutinesVersion = "1.5.2"
+        mockito_version = '4.2.0'
+        androidx_activity_version = '1.4.0'
+        androidx_fragment_version = '1.4.0'
+    }
+
     repositories {
         google()
         mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$koltin_version"
+
+        // ---- Dagger Hilt ----
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$dagger_hilt"
+
+        // ktlint-gradle Provides a convenient wrapper plugin over the ktlint project.
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:$ktlint_gradle_plugin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
