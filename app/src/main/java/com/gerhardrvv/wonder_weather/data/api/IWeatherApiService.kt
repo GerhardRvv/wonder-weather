@@ -10,12 +10,12 @@ interface IWeatherApiService {
 
     @GET("api/location/search/?")
     suspend fun getLocationId(
-        @QueryMap currentLatLong: MutableMap<String, String>
+        @QueryMap currentLatLong: MutableMap<String, String?>
     ): WeatherSearchResponse
 
     @GET("api/location/{location}")
     suspend fun getWeatherFromLocationId(
-        @Path("location") locationId: String
+        @Path("location") locationId: String?
     ): WeatherResponse
 
     companion object {

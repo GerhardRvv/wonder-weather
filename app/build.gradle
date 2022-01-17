@@ -39,6 +39,9 @@ android {
     viewBinding {
         enabled = true
     }
+    dataBinding {
+        enabled = true
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -101,4 +104,9 @@ dependencies {
     // Moshi
     implementation 'com.squareup.moshi:moshi-kotlin:1.9.2'
     kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.9.2'
+
+    implementation "com.google.android.gms:play-services-location:$google_play_services_version"
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 }
+

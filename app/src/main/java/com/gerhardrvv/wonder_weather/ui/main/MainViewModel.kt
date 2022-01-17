@@ -27,12 +27,17 @@ class MainViewModel @Inject constructor(
     val weatherLiveData: LiveData<WeatherResponseState>
         get() = _weatherLiveData
 
-    fun getLocationId() {
-        viewModelScope.launch() {
-            weatherRepository.getLocationId().collect {
+    fun getLocationId(latLong: String?) {
+        viewModelScope.launch {
+            weatherRepository.getLocationId(latLong).collect {
                 _weatherSearchLiveData.value = it
             }
-            weatherRepository.getWeather().collect {
+        }
+    }
+
+    fun getWeatherWithId(locationId: String?) {
+        viewModelScope.launch {
+            weatherRepository.getWeather(locationId).collect {
                 _weatherLiveData.value = it
             }
         }
