@@ -2,12 +2,11 @@
 <h1 align="center"> wonder-weather</h1>
 
 ## About
-The app was made following [MVVM (Model View View-Model)] architecture, with the intention to demonstrate functionality achieve using ViewModels, Retrofit LiveData and Flow: 
+The app was made following [MVVM (Model View View-Model)] architecture, with the intention to demonstrate functionality achieve using ViewModels, Retrofit, LiveData and Flow: 
 
-The App will request access to device location(Lat, Long) then it will use that info to obtain a location ID from the closest City and then request the current weather at https://www.metaweather.com/api/ it handles Error. Loading and Success states to control what is displayed in the screen.
+The App will request access to device location(Lat, Long) then it will use that info to obtain the location ID from the closest City and then request the current weather at https://www.metaweather.com/api/ it handles Error, Loading and Success states to control what is displayed in the screen.
 
 ## Built with
- Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs..
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [ktlint](https://ktlint.github.io/) - Anti-bikeshedding Kotlin linter with built-in formatter.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more.
