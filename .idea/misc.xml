@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/wonder-weather/app/src/main/res/layout/local_weather_fragment.xml" value="0.245018115942029" />
+        <entry key="..\:/AndroidProjects/wonder-weather/app/src/main/res/layout/location_fragment.xml" value="0.245018115942029" />
+        <entry key="..\:/AndroidProjects/wonder-weather/app/src/main/res/layout/main_activity.xml" value="0.245018115942029" />
         <entry key="..\:/AndroidProjects/wonder-weather/app/src/main/res/layout/main_fragment.xml" value="0.22289766970618036" />
       </map>
     </option>

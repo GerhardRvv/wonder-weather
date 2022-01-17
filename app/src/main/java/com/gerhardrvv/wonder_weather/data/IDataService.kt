@@ -5,7 +5,7 @@ import com.gerhardrvv.wonder_weather.utils.WeatherSearchResponse
 
 interface IDataService {
 
-    suspend fun searchLocationId(latLong: MutableMap<String, String>): WeatherSearchResponse
+    suspend fun searchLocationId(latLong: MutableMap<String, String?>): WeatherSearchResponse
 
-    suspend fun getWeatherFromLocationId(locationId: String): WeatherResponse
+    suspend fun getWeatherFromLocationId(locationId: String?): WeatherResponse
 }

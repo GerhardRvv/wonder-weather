@@ -10,9 +10,9 @@ class NetworkDataService @Inject constructor(
     private val weatherService: IWeatherApiService
 ) : IDataService {
 
-    override suspend fun searchLocationId(latLong: MutableMap<String, String>): WeatherSearchResponse =
+    override suspend fun searchLocationId(latLong: MutableMap<String, String?>): WeatherSearchResponse =
         weatherService.getLocationId(latLong)
 
-    override suspend fun getWeatherFromLocationId(locationId: String): WeatherResponse =
+    override suspend fun getWeatherFromLocationId(locationId: String?): WeatherResponse =
         weatherService.getWeatherFromLocationId(locationId)
 }

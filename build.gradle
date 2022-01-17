@@ -16,6 +16,7 @@ buildscript {
         mockito_version = '4.2.0'
         androidx_activity_version = '1.4.0'
         androidx_fragment_version = '1.4.0'
+        google_play_services_version = "19.0.1"
     }
 
     repositories {
